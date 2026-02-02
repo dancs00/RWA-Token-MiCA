@@ -1,0 +1,12 @@
+{
+  "asset_name": "Gold Solidus - Justinian II",
+  "issuer": "Matteo De Ascentiis RWA Lab",
+  "physical_storage": "Secured Vault - Zurich, CH",
+  "legal_framework": "MiCA - Asset Referenced Token",
+  "authentication": {
+    "certificate_id": "NUMI-99823-XYZ",
+    "grade": "MS-65 (NGC)",
+    "verification_url": "https://example.com/verify/solidus-123"
+  },
+  "audit_frequency": "Quarterly"
+}
