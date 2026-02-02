@@ -1,5 +1,14 @@
 # RWA-Token-MiCA
 
+Wallet: 0x65Ebb74DccABb7Fb9cAC48C68DF67b19662A20d2
+
+Transaction 0x468a998093adeEe73dE247844dda9dA9c1aAA361
+
+Network: Ethereum Sepolia Testnet
+
+Erc20: ENumi (NUMI)
+
+
 English Version
 # # # # 1. Compliance and Institutional Protection (Whitelist & MiCA)
 The protocol integrates a native Whitelist function, an essential element for compliance with the MiCA (Markets in Crypto-Assets) regulation. Unlike standard tokens, the transfer of our assets is subject to on-chain identity verification. For institutional investors, this mitigates counterparty risks associated with unidentified or sanctioned wallets. Every transaction occurs exclusively between addresses that have cleared rigorous KYC (Know Your Customer) and AML (Anti-Money Laundering) processes, ensuring a "permissioned" trading environment that safeguards both the fund's integrity and the participants' reputations.
