@@ -46,6 +46,8 @@ Variable Optimization: Shifted the assetDocumentationURI to an immutable state. 
 
 
 
+
+
 # Versione Italiana
 
 # 1. Compliance e Protezione Istituzionale (Whitelist & MiCA)
