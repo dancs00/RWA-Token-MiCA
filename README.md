@@ -43,7 +43,30 @@ Custom Errors: Replaced traditional require strings with Custom Errors (e.g., er
 Variable Optimization: Shifted the assetDocumentationURI to an immutable state. Since this reference to the physical underlying asset does not change after deployment, defining it as immutable optimizes gas consumption for every on-chain read operation.
 
 
+# Operational Workflow: From Physical Asset to Digital Token
+The tokenization process follows a rigorous 4-step framework to ensure legal compliance, physical security, and digital transparency.
 
+1. Asset Sourcing & Appraisal
+Valuation: The physical asset (e.g., a high-value Numismatic Collection) is appraised by certified experts to establish its fair market value.
+
+Vaulting: The asset is moved to a high-security professional vault (e.g., in Zurich, Switzerland) to ensure physical safety and insurance coverage.
+
+2. Digital Identity & Metadata
+Hashing: A unique digital fingerprint (Hash) of the appraisal certificate and high-resolution imagery is generated.
+
+Metadata Creation: This information is stored in an asset-metadata.json file, linking the physical item's characteristics to the blockchain.
+
+On-chain Linking: The IPFS/GitHub link to this metadata is permanently stored in the assetDocumentationURI variable of the Smart Contract.
+
+3. Compliance & Onboarding (MiCA Framework)
+Investor KYC: Users wishing to invest must undergo Identity Verification (KYC) and Anti-Money Laundering (AML) checks.
+
+Whitelisting: Once verified, the investor's wallet address is added to the Smart Contract's Whitelist mapping by the administrator.
+
+4. Issuance & Trading
+Minting: Tokens representing fractional ownership of the asset are minted and sent to the issuer's or investors' whitelisted wallets.
+
+Secondary Market: Investors can trade fractions of the asset 24/7, but the Smart Contract automatically blocks any transfer to non-verified (non-whitelisted) addresses.
 
 
 
@@ -88,3 +111,28 @@ Utilizzo di immutable: La variabile assetDocumentationURI viene impostata nel co
 Custom Errors: Invece di usare stringhe lunghe nei require (es. "Mittente non verificato..."), l'uso di error NonWhitelisted(); riduce drasticamente la dimensione del bytecode del contratto e il costo del gas in caso di fallimento della transazione.
 
 Mapping Optimization: Non ci sono grandi margini qui, ma l'uso di external per le funzioni di whitelist è già un'ottima pratica (più economico di public).
+
+# Workflow Operativo: Dall'Asset Fisico al Token Digitale
+Il processo di tokenizzazione segue un framework rigoroso in 4 fasi per garantire conformità legale, sicurezza fisica e trasparenza digitale.
+
+1. Approvvigionamento e Valutazione dell'Asset
+Valutazione: L'asset fisico (es. una collezione numismatica di pregio) viene periziato da esperti certificati per stabilirne il valore di mercato.
+
+Custodia: L'asset viene trasferito in un caveau professionale ad alta sicurezza (es. a Zurigo, Svizzera) per garantire l'integrità fisica e la copertura assicurativa.
+
+2. Identità Digitale e Metadati
+Hashing: Viene generata un'impronta digitale unica (Hash) del certificato di perizia e delle immagini ad alta risoluzione.
+
+Creazione Metadati: Queste informazioni vengono memorizzate in un file asset-metadata.json, collegando le caratteristiche dell'oggetto fisico alla blockchain.
+
+Collegamento On-chain: Il link (IPFS o GitHub) a questi metadati viene memorizzato permanentemente nella variabile assetDocumentationURI dello Smart Contract.
+
+3. Compliance e Onboarding (Quadro MiCA)
+KYC dell'investitore: Gli utenti che desiderano investire devono superare i controlli di verifica dell'identità (KYC) e le procedure antiriciclaggio (AML).
+
+Whitelisting: Una volta verificato, l'indirizzo del portafoglio (wallet) dell'investitore viene aggiunto alla "Whitelist" del contratto dall'amministratore.
+
+4. Emissione e Scambio
+Minting: Vengono emessi i token che rappresentano la proprietà frazionata dell'asset e inviati ai wallet verificati.
+
+Mercato Secondario: Gli investitori possono scambiare frazioni dell'asset 24 ore su 24, 7 giorni su 7, ma lo Smart Contract blocca automaticamente ogni trasferimento verso indirizzi non verificati (non in whitelist).
