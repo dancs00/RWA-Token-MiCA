@@ -9,7 +9,8 @@ Network: Ethereum Sepolia Testnet
 Erc20: ENumi (NUMI)
 
 
-#English Version
+
+# English Version
 
 # # # # 1. Compliance and Institutional Protection (Whitelist & MiCA)
 The protocol integrates a native Whitelist function, an essential element for compliance with the MiCA (Markets in Crypto-Assets) regulation. Unlike standard tokens, the transfer of our assets is subject to on-chain identity verification. For institutional investors, this mitigates counterparty risks associated with unidentified or sanctioned wallets. Every transaction occurs exclusively between addresses that have cleared rigorous KYC (Know Your Customer) and AML (Anti-Money Laundering) processes, ensuring a "permissioned" trading environment that safeguards both the fund's integrity and the participants' reputations.
@@ -45,7 +46,7 @@ Variable Optimization: Shifted the assetDocumentationURI to an immutable state. 
 
 
 
-#Versione Italiana
+# Versione Italiana
 
 # # # # 1. Compliance e Protezione Istituzionale (Whitelist & MiCA)
 Il protocollo integra una funzione nativa di Whitelist, elemento imprescindibile per la conformità al regolamento MiCA (Markets in Crypto-Assets). A differenza dei token standard, il trasferimento del nostro asset è subordinato a un controllo di identità on-chain. Per gli investitori istituzionali, questo elimina il rischio di controparte legato a portafogli non identificati o sanzionati. Ogni transazione avviene esclusivamente tra indirizzi che hanno superato rigorosi processi di KYC (Know Your Customer) e AML (Anti-Money Laundering), garantendo un ambiente di trading "permissioned" che tutela l'integrità del fondo e la reputazione dei partecipanti.
